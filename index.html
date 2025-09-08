@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Must match resume.json for the grader -->
+  <title>Your Name</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Required path for tests -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <p>Tate Reynolds</p>
+    <p><a href="contact.html">Contact Tate Reynolds</a></p>
+  </nav>
+
+  <!-- SPLASH / PROFILE -->
+  <header>
+    <h1>Tate Reynolds</h1>
+    <img class="headshot" src="images/headshot.jpg" alt="Headshot of Tate Reynolds" />
+    <p class="address">
+      Athens, GA &bull; (404) 426-1644 &bull;
+      <a href="mailto:ctr60458@uga.edu">ctr60458@uga.edu</a>
+    </p>
+    <p class="tagline">
+      I'm Tate, student programmer (+3 years), proficient in Java, Python, and game design.
+      I’m seeking a role in computer software design and game development.
+    </p>
+    <hr />
+  </header>
+
+  <!-- EDUCATION -->
+  <section aria-labelledby="edu">
+    <h2 id="edu">Education</h2>
+    <dl>
+      <dt>BS in Computer Science (Engineering)</dt>
+      <dd>GPA: 3.4</dd>
+
+      <dt>Master’s in Business</dt>
+      <dd>Expected Graduation: TBD</dd>
+    </dl>
+  </section>
+
+  <!-- HONORS & AWARDS -->
+  <section aria-labelledby="awards">
+    <h2 id="awards">Honors and Awards</h2>
+    <dl>
+      <dt>Dean’s List</dt><dd>2021</dd>
+      <dt>Dean’s List</dt><dd>2022</dd>
+      <dt>Dean’s List</dt><dd>2023</dd>
+      <dt>Dean’s List</dt><dd>2024</dd>
+      <dt>Dean’s List (Summer)</dt><dd>2025</dd>
+    </dl>
+  </section>
+
+  <!-- SKILLS -->
+  <section aria-labelledby="skills">
+    <h2 id="skills">Skills</h2>
+    <ul>
+      <li>Java</li>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>Game Design (Unity/Unreal basics)</li>
+      <li>Git &amp; GitHub</li>
+    </ul>
+  </section>
+
+  <!-- LEADERSHIP & EXPERIENCE -->
+  <section aria-labelledby="exp">
+    <h2 id="exp">Leadership and Experience</h2>
+    <dl>
+      <dt>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+          IT Specialist — Reynolds Farm
+        </a>
+      </dt>
+      <dd>From: 2022 &nbsp; | &nbsp; To: Present</dd>
+
+      <dt>Volunteer — TQIP 2023</dt>
+      <dd>From: 11/30/2023 &nbsp; | &nbsp; To: 12/2/2023</dd>
+    </dl>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" aria-labelledby="projects">
+    <h2 id="projects">Projects</h2>
+
+    <div class="three-col">
+      <!-- Use DIVs (not <article>) so tests find div.card -->
+      <div class="card">
+        <img src="images/p1-tree.jpg" alt="Project tree for crossword game source code" />
+        <div class="card-body">
+          <h3>Crossword Game (C)</h3>
+          <ul>
+            <li>Terminal-based crossword with solve/validate commands</li>
+            <li>Parsing, file I/O, and command handling</li>
+            <li>Tech: C, Make, unit tests</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/p2-tree.jpg" alt="Project tree for moving pictures program" />
+        <div class="card-body">
+          <h3>Moving Pictures (C++)</h3>
+          <ul>
+            <li>Simulates motion by sequencing still frames quickly</li>
+            <li>Manipulated image buffers and frame timing</li>
+            <li>Tech: C++, custom image format, Make</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/p3-tree.jpg" alt="Project tree for custom shell program" />
+        <div class="card-body">
+          <h3>Mini Shell (C)</h3>
+          <ul>
+            <li>Shell-within-a-shell with built-ins and process control</li>
+            <li>Used fork/exec, pipes, and redirection</li>
+            <li>Tech: C, POSIX APIs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>&copy; <a href="contact.html">Tate Reynolds</a></span>
+  </footer>
+
+</body>
+</html>

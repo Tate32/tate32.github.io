@@ -1,0 +1,170 @@
+:root{
+  --ink:#0f172a;
+  --muted:#475569;
+  --brand:#0b63ce;
+  --accent:#0b3c5d;
+  --card:#ffffff;
+  --line:#e5e7eb;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  max-width: 980px;
+  margin: 24px auto 56px;
+  padding: 0 16px;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+/****************   Nav Section **********************/
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#f7f9fc;
+  border-bottom:1px solid var(--line);
+  padding:10px 12px;
+}
+nav a{ color:var(--brand); text-decoration:none; }
+nav a:hover{ text-decoration:underline; }
+
+/***********************  Footer Section   **************************/
+footer{
+  display:flex;
+  justify-content:center;
+  gap:.5rem;
+  margin-top:32px;
+  padding:14px 0;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+}
+footer a{ color:var(--brand); text-decoration:none; }
+footer a:hover{ text-decoration:underline; }
+
+/*********** Splash Page ************************/
+header{
+  background: linear-gradient(180deg,#f9fbff 0%, #ffffff 100%);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:16px;
+}
+header h1{
+  font-family:Poppins, Inter, system-ui, Arial, sans-serif;
+  color:var(--accent);
+  font-weight:800;
+  margin:0 0 8px 0;
+  letter-spacing:.3px;
+}
+header img.headshot{
+  width:110px; height:110px; object-fit:cover;
+  border:3px solid #fff;
+  border-radius:12px;
+  box-shadow:0 6px 14px rgba(2,8,23,.10);
+}
+.address{
+  margin:.5rem 0 0;
+  font-weight:600;
+  color:var(--muted);
+}
+.tagline{
+  margin:.25rem 0 0;
+  color:#1f2937;
+  font-style:italic;
+}
+hr{
+  border:0;
+  border-top:1px solid var(--line);
+  margin:16px 0 0;
+}
+
+/************* Sections ********************/
+section{ margin-top:24px; }
+section h2{
+  font-family:Poppins, Inter, Arial, sans-serif;
+  font-weight:800;
+  color:#0b2447;
+  margin:0 0 10px 0;
+}
+section h3{
+  font-family:Poppins, Inter, Arial, sans-serif;
+  color:var(--accent);
+  margin:0 0 8px 0;
+}
+section dl{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:6px 20px;
+  margin:0;
+}
+section ul{
+  padding-left:1.25rem;
+  margin:0;
+}
+section a{
+  color:var(--brand);
+  text-decoration:none;
+}
+section a:hover{
+  color:#0a4ea2;
+  text-decoration:underline;
+}
+
+/**************   Projects   *****************/
+.projects .three-col{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap:18px;
+}
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:14px;
+  box-shadow:0 10px 20px rgba(2,8,23,.04);
+}
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:8px;
+  display:block;
+  margin:0 0 10px 0;
+}
+.card ul{ margin-top:8px; }
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+  nav {
+    flex-direction: column;
+    gap: .5rem;
+    text-align:center;
+  }
+
+  .projects .three-col,
+  .three-col{
+    grid-template-columns: 1fr;
+  }
+}
+
+/**************   Contact Page   *****************/
+.one-col{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:.75rem;
+  max-width:540px;
+}
+input, textarea, button{
+  font: inherit;
+  padding:.6rem .7rem;
+  border:1px solid #cfd8e3;
+  border-radius:10px;
+}
+textarea{ min-height:120px; }
+button{
+  background:#0b63ce;
+  color:#fff;
+  cursor:pointer;
+  border-color:#0b63ce;
+}
+button:hover{ filter:brightness(.95); }
