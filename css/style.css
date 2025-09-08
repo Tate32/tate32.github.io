@@ -44,14 +44,15 @@ footer a:hover{ text-decoration:underline; }
 
 /*********** Splash Page ************************/
 header{
-  background: linear-gradient(180deg,#f9fbff 0%, #ffffff 100%);
+  /* red banner */
+  background: #e11d48;
   border:1px solid var(--line);
   border-radius:12px;
   padding:16px;
 }
 header h1{
   font-family:Poppins, Inter, system-ui, Arial, sans-serif;
-  color:var(--accent);
+  color:#fff;                 /* CHANGED: white name */
   font-weight:800;
   margin:0 0 8px 0;
   letter-spacing:.3px;
@@ -65,7 +66,7 @@ header img.headshot{
 .address{
   margin:.5rem 0 0;
   font-weight:600;
-  color:var(--muted);
+  color:#fff;                 /* CHANGED: white address line */
 }
 .tagline{
   margin:.25rem 0 0;
